@@ -14,3 +14,6 @@ standard: e27
 chip: TYWE2L
 ---
 The bulb is Tuya-based but the samples I received shipped with a new firmware that is not yet compatible with tuya-convert. I had to pop the top plastic off (easily done), unscrew and remove the LED board (easily done), pull out the live contact from the bottom of the bulb, reach in with a tool to break off the neutral wire (a struggle), then slide out the board, desolder the Tuya TYWE2L module and use the serial port on the back of the Tuya module to flash over serial. Then I repeated the whole process in reverse to reassemble the bulb (I extended the neutral wire so I could more easily solder it while the board was not yet fully seated.) Board photos at https://photos.app.goo.gl/5JteUgd22K4KLzwn7
+---
+2022-OCT-30
+Thank you guys for this site and the previous work on this bulb. Unfortunately the units I just received from SimplyConserve are based on the Tuya WB8P module (includes a BK7231T RF chip according to the datasheet). This is apparently an ARM variant which is not currently supported by Tasmota. However there appears to be open source firmware out there for it.
